@@ -26,14 +26,14 @@ export const Button: React.FC<
   onClick,
   children,
 }) => {
-  let base =
+  const base =
     "inline-flex items-center justify-center font-medium transition-colors focus:outline-none disabled:opacity-50";
   let styles = "";
   if (variant === "default") styles = "bg-red-600 text-white hover:bg-red-700";
   if (variant === "outline")
     styles = "border border-zinc-300 text-zinc-800 hover:bg-zinc-50";
   if (variant === "ghost") styles = "text-zinc-700 hover:bg-zinc-100";
-  let padding = size === "sm" ? "px-3 py-1.5 text-sm" : "px-4 py-2";
+  const padding = size === "sm" ? "px-3 py-1.5 text-sm" : "px-4 py-2";
   return (
     <button
       onClick={onClick}
@@ -124,13 +124,13 @@ export const Badge: React.FC<
 );
 
 // --- Палитра и токены (в Tailwind классы встроены, ниже — справочно) ---
-const palette = {
-  primary: "#D32F2F", // красный
-  accent: "#FBC02D", // золотой
-  text: "#212121", // тёмно-серый
-  bg: "#FFFFFF",
-  soft: "#F5F5F5",
-};
+// const palette = {
+//   primary: "#D32F2F", // красный
+//   accent: "#FBC02D", // золотой
+//   text: "#212121", // тёмно-серый
+//   bg: "#FFFFFF",
+//   soft: "#F5F5F5",
+// };
 
 const Container: React.FC<React.PropsWithChildren<{ className?: string }>> = ({
   className = "",
