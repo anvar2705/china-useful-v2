@@ -1,14 +1,14 @@
-import type { NextConfig } from "next";
-
-const isProd = process.env.NODE_ENV === "production";
 const REPO_NAME = "china-useful-v2";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
-  basePath: isProd ? `/${REPO_NAME}` : "",
-  assetPrefix: isProd ? `/${REPO_NAME}` : "",
+  basePath: `/${REPO_NAME}`,
+  reactStrictMode: true,
+  images: {
+    domains: ["localhost", "flagcdn.com", "upload.wikimedia.org"],
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
