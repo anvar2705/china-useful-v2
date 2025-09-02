@@ -1,50 +1,28 @@
-import React, { useMemo, useState } from "react";
-import { motion } from "framer-motion";
-import {
-  Check,
-  Globe2,
-  GraduationCap,
-  Layers,
-  MapPin,
-  Sparkles,
-  Star,
-  Users,
-} from "lucide-react";
-import { Button } from "@/shared/components/button";
+import React, { useState } from "react";
 import { Nav } from "@/widgets/nav";
 import { Hero } from "@/widgets/hero";
 import { FeatureGrid } from "@/widgets/feature-grid";
 import { GrantsStrip } from "@/widgets/grants-strip";
-import { Universities } from "@/widgets/universities";
 import { CTAForm } from "@/widgets/cta-form";
 import { Footer } from "@/widgets/footer";
 import { Reviews } from "@/widgets/reviews";
-import { Container } from "@/shared/components/container";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/shared/components/card";
-import { Input, Textarea } from "@/shared/components/input";
-
-// --- Палитра и токены (в Tailwind классы встроены, ниже — справочно) ---
-// const palette = {
-//   primary: "#D32F2F", // красный
-//   accent: "#FBC02D", // золотой
-//   text: "#212121", // тёмно-серый
-//   bg: "#FFFFFF",
-//   soft: "#F5F5F5",
-// };
+import { ForWho } from "@/widgets/for-who";
 
 export default function ChinaUsefulPrototype() {
   const [route, setRoute] = useState("home");
 
   return (
-    <div className="min-h-screen bg-white text-zinc-900">
+    <div className="min-h-screen">
       <Nav onNavigate={setRoute} route={route} />
+      <Hero onCTA={() => setRoute("contacts")} />
+      <ForWho />
+      <FeatureGrid />
+      <GrantsStrip />
+      <Reviews />
+      <CTAForm />
+      <Footer />
 
-      {route === "home" && (
+      {/* {route === "home" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
           <FeatureGrid />
@@ -218,10 +196,10 @@ export default function ChinaUsefulPrototype() {
                 </CardContent>
               </Card>
             </div>
-          </Container>
-          <Footer />
+          </Container> */}
+      {/* <Footer />
         </>
-      )}
+      )} */}
     </div>
   );
 }

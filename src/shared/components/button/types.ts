@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 
 export type ButtonProps = PropsWithChildren<{
   className?: string;
-  variant?: "default" | "outline" | "ghost";
+  variant?: "contained" | "outlined";
   size?: "sm" | "md";
   onClick?: () => void;
 }>;
