@@ -1,26 +1,21 @@
-import React, { useState } from "react";
-import { Nav } from "@/widgets/nav";
 import { Hero } from "@/widgets/hero";
 import { FeatureGrid } from "@/widgets/feature-grid";
 import { GrantsStrip } from "@/widgets/grants-strip";
 import { CTAForm } from "@/widgets/cta-form";
-import { Footer } from "@/widgets/footer";
 import { Reviews } from "@/widgets/reviews";
 import { ForWho } from "@/widgets/for-who";
+import { Promo } from "@/widgets/promo";
 
 export default function ChinaUsefulPrototype() {
-  const [route, setRoute] = useState("home");
-
   return (
     <div className="min-h-screen">
-      <Nav onNavigate={setRoute} route={route} />
-      <Hero onCTA={() => setRoute("contacts")} />
+      <Hero />
+      <Promo />
       <ForWho />
       <FeatureGrid />
       <GrantsStrip />
       <Reviews />
       <CTAForm />
-      <Footer />
 
       {/* {route === "home" && (
         <>

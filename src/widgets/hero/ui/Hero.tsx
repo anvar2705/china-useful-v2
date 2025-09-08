@@ -1,35 +1,27 @@
-import { Badge } from "@/shared/components/badge/ui/Badge";
 import { Button } from "@/shared/components/button";
-import { Card, CardContent } from "@/shared/components/card";
 import { Container } from "@/shared/components/container";
 import { motion } from "framer-motion";
-import { Globe2, Users } from "lucide-react";
 
-export const Hero: React.FC<{ onCTA: () => void }> = ({ onCTA }) => (
-  <Container outer="bg-background-secondary pt-18" inner="h-160">
-    <div className="w-full flex flex-col justify-center pt-50">
-      <motion.h1
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-5xl font-semibold mb-10"
-      >
+export const Hero: React.FC<{ onCTA?: () => void }> = ({ onCTA }) => (
+  <Container outer="bg-background-primary pt-18" inner="h-160">
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full flex flex-col justify-center pt-50"
+    >
+      <h1 className="text-5xl font-semibold mb-10">
         Откройте мир знаний и возможностей в Китае
-      </motion.h1>
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="text-3xl mb-10"
-      >
+      </h1>
+      <div className="text-3xl mb-10">
         300+ успешно отправленных студентов, реальные кейсы, поддержка на каждом
         этапе — от выбора университета до заселения в кампус.
-      </motion.div>
+      </div>
       <div className="flex justify-center gap-6">
         <Button>Оставить заявку</Button>
         <Button variant="outlined">Бесплатная консультация</Button>
       </div>
-    </div>
+    </motion.div>
     {/* <p className="mt-4 text-base leading-relaxed text-zinc-700 md:text-lg">
         300+ успешно отправленных студентов, реальные кейсы, поддержка на каждом
         этапе — от выбора университета до заселения в кампус.

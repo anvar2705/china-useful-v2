@@ -1,9 +1,9 @@
 import { Container } from "@/shared/components/container";
 import { Badge, Sparkles } from "lucide-react";
 
-export const Footer: React.FC = () => (
+export const Footer = () => (
   <footer className="border-t bg-white">
-    <Container className="grid gap-8 py-8 md:grid-cols-4">
+    <Container inner="grid gap-8 py-8 md:grid-cols-4">
       <div>
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-600 text-white">
