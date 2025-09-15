@@ -2,7 +2,7 @@ import { Container } from "@/shared/components/container";
 import { Badge, Sparkles } from "lucide-react";
 
 export const Footer = () => (
-  <footer className="border-t bg-white">
+  <footer className="border-t border-gray-500 bg-white">
     <Container inner="grid gap-8 py-8 md:grid-cols-4">
       <div>
         <div className="flex items-center gap-2">

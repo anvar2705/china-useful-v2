@@ -15,8 +15,8 @@ export const Header = () => {
 
   return (
     <Container
-      outer="fixed top-0 z-50 w-full border-b border-border-primary bg-transparent backdrop-blur supports-[backdrop-filter]:bg-background-secondary/20"
-      inner="h-18 flex items-center justify-between py-3 md:py-4"
+      outer="fixed top-0 z-50 w-full border-b border-gray-500 bg-transparent backdrop-blur supports-[backdrop-filter]:bg-black/30"
+      inner="h-18 flex items-center justify-between py-3 md:py-4 text-white"
     >
       <div className="flex items-center gap-2">
         <div className="font-semibold tracking-tight">China Useful</div>

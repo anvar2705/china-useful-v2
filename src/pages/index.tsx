@@ -1,10 +1,11 @@
 import { Hero } from "@/widgets/hero";
 import { FeatureGrid } from "@/widgets/feature-grid";
-import { GrantsStrip } from "@/widgets/grants-strip";
+import { Grants } from "@/widgets/grants";
 import { CTAForm } from "@/widgets/cta-form";
 import { Reviews } from "@/widgets/reviews";
 import { ForWho } from "@/widgets/for-who";
 import { Promo } from "@/widgets/promo";
+import { LanguageYear } from "@/widgets/language-year";
 
 export default function ChinaUsefulPrototype() {
   return (
@@ -12,16 +13,15 @@ export default function ChinaUsefulPrototype() {
       <Hero />
       <Promo />
       <ForWho />
-      <FeatureGrid />
-      <GrantsStrip />
-      <Reviews />
+      <Grants />
+      <LanguageYear />
       <CTAForm />
 
       {/* {route === "home" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
           <FeatureGrid />
-          <GrantsStrip />
+          <Grants />
           <Reviews />
           <CTAForm />
           <Footer />
@@ -67,7 +67,7 @@ export default function ChinaUsefulPrototype() {
       {route === "grants" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
-          <GrantsStrip />
+          <Grants />
           <Container className="py-12 md:py-16">
             <h2 className="text-2xl font-semibold md:text-3xl">Виды грантов</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">

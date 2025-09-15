@@ -1,10 +1,11 @@
-export const Textarea: React.FC<
-  React.TextareaHTMLAttributes<HTMLTextAreaElement>
-> = (props) => (
+import { TextareaHTMLAttributes } from "react";
+
+export const Textarea = ({
+  className,
+  ...rest
+}: TextareaHTMLAttributes<HTMLTextAreaElement>) => (
   <textarea
-    {...props}
-    className={`w-full border border-zinc-300 px-3 py-2 text-sm rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 ${
-      props.className || ""
-    }`}
+    {...rest}
+    className={`w-full border border-zinc-300 px-3 py-2 text-md rounded-none focus:outline-none ${className}`}
   />
 );

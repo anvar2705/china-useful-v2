@@ -13,7 +13,8 @@ export const Button = (props: ButtonProps) => {
     "text-md rounded-4xl inline-flex items-center justify-center font-medium cursor-pointer transition-colors focus:outline-none disabled:opacity-50 uppercase";
   let styles = "";
   if (variant === "contained")
-    styles = "bg-primary text-white hover:bg-primary-dark";
+    styles =
+      "bg-primary border border-primary text-white hover:bg-primary-dark hover:border-primary-dark";
   if (variant === "outlined")
     styles =
       "bg-transparent border border-primary hover:bg-primary hover:text-white";

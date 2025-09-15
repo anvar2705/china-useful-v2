@@ -6,12 +6,11 @@ import { Container } from "@/shared/components/container";
 export function Promo() {
   return (
     <Container
-      outer="relative bg-gradient-to-r from-red-50 via-white to-red-50 py-16 px-6 lg:px-20"
-      inner="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center"
+      outer="py-16 px-6 lg:px-20 bg-gradient-primary"
+      inner="grid lg:grid-cols-2 gap-10 items-center"
     >
-      {/* Левая часть — текст */}
       <div className="leading-relaxed">
-        <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-primary mb-6">
           Образование в Китае: знания, карьера и приключения в одном пути
         </h2>
         <p className="text-lg mb-4">
@@ -50,14 +49,11 @@ export function Promo() {
         </div>
       </div>
 
-      {/* Правая часть — изображения */}
       <div className="grid grid-cols-2 grid-rows-2 gap-4">
         <div className="w-full h-full col-span-2 relative">
           <Image
             src={`photos/promo/IMG_5774.jpg`}
             alt="Университет в Китае"
-            // width={600}
-            // height={900}
             fill
             className="rounded-2xl shadow-md object-cover"
           />
