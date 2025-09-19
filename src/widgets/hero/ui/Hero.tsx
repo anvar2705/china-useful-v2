@@ -1,10 +1,11 @@
 import { Button } from "@/shared/components/button";
 import { Container } from "@/shared/components/container";
 import { motion } from "framer-motion";
+import { REPO_NAME } from "../../../../next.config";
 
 export const Hero = () => (
   <Container
-    outer="pt-18 bg-[url('/photos/hero/hero-bg.jpg')] bg-cover bg-center bg-no-repeat"
+    outer={`pt-18 bg-[url('${REPO_NAME}/photos/hero/hero-bg.jpg')] bg-cover bg-center bg-no-repeat`}
     overlay="absolute inset-0 bg-black/55"
     inner="h-190 text-white"
   >
