@@ -3,7 +3,7 @@ import { Container } from "@/shared/components/container";
 import { Star } from "lucide-react";
 
 export const Reviews: React.FC = () => (
-  <Container className="py-12 md:py-16">
+  <Container outer="py-12 md:py-16">
     <h3 className="text-xl font-semibold md:text-2xl">Отзывы студентов</h3>
     <div className="mt-4 grid gap-4 md:grid-cols-3">
       {[1, 2, 3].map((i) => (

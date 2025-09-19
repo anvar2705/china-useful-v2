@@ -1,3 +1,3 @@
-export type MainLayoutProps = React.PropsWithChildren<{}>;
+import { PropsWithChildren } from "react";
 
-export type HeaderProps = {};
+export type MainLayoutProps = PropsWithChildren;

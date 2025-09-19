@@ -2,7 +2,7 @@ import { Button } from "@/shared/components/button";
 import { Container } from "@/shared/components/container";
 import { motion } from "framer-motion";
 
-export const Hero: React.FC<{ onCTA?: () => void }> = ({ onCTA }) => (
+export const Hero = () => (
   <Container
     outer="pt-18 bg-[url('/photos/hero/hero-bg.jpg')] bg-cover bg-center bg-no-repeat"
     overlay="absolute inset-0 bg-black/55"

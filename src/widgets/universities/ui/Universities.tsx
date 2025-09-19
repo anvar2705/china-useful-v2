@@ -49,7 +49,7 @@ export const Universities: React.FC = () => {
 
   return (
     <div className="bg-zinc-50">
-      <Container className="py-10 md:py-14">
+      <Container outer="py-10 md:py-14">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
@@ -64,7 +64,7 @@ export const Universities: React.FC = () => {
               placeholder="Поиск по названию"
               className="w-56 rounded-2xl"
             />
-            <Button variant="outline" className="rounded-2xl">
+            <Button variant="outlined" className="rounded-2xl">
               Фильтры
             </Button>
           </div>

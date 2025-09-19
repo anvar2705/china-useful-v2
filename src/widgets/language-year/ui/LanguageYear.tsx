@@ -1,5 +1,4 @@
 import { Container } from "@/shared/components/container";
-import { Title } from "@/shared/components/title";
 import Image from "next/image";
 
 export const LanguageYear = () => {

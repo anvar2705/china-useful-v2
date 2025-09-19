@@ -1,8 +1,6 @@
 import { Hero } from "@/widgets/hero";
-import { FeatureGrid } from "@/widgets/feature-grid";
 import { Grants } from "@/widgets/grants";
 import { CTAForm } from "@/widgets/cta-form";
-import { Reviews } from "@/widgets/reviews";
 import { ForWho } from "@/widgets/for-who";
 import { Promo } from "@/widgets/promo";
 import { LanguageYear } from "@/widgets/language-year";
@@ -40,7 +38,7 @@ export default function ChinaUsefulPrototype() {
       {route === "services" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
-          <Container className="py-12 md:py-16">
+          <Container outer="py-12 md:py-16">
             <h2 className="text-2xl font-semibold md:text-3xl">Услуги</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-3">
               {[
@@ -68,7 +66,7 @@ export default function ChinaUsefulPrototype() {
         <>
           <Hero onCTA={() => setRoute("contacts")} />
           <Grants />
-          <Container className="py-12 md:py-16">
+          <Container outer="py-12 md:py-16">
             <h2 className="text-2xl font-semibold md:text-3xl">Виды грантов</h2>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               {[
@@ -120,7 +118,7 @@ export default function ChinaUsefulPrototype() {
       {route === "path" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
-          <Container className="py-12 md:py-16">
+          <Container outer="py-12 md:py-16">
             <h2 className="text-2xl font-semibold md:text-3xl">
               Путь студента
             </h2>
@@ -159,7 +157,7 @@ export default function ChinaUsefulPrototype() {
       {route === "contacts" && (
         <>
           <Hero onCTA={() => setRoute("contacts")} />
-          <Container className="py-12 md:py-16">
+          <Container outer="py-12 md:py-16">
             <h2 className="text-2xl font-semibold md:text-3xl">Контакты</h2>
             <div className="mt-4 grid gap-6 md:grid-cols-2">
               <Card className="rounded-2xl shadow-sm">
