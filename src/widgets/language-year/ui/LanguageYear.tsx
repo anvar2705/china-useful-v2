@@ -1,11 +1,10 @@
 import { Container } from "@/shared/components/container";
 import Image from "next/image";
-import { REPO_NAME } from "../../../../next.config";
 
 export const LanguageYear = () => {
   return (
     <Container
-      outer={`bg-[url('${REPO_NAME}/photos/language-year/language-year-bg.jpg')] bg-cover bg-center bg-no-repeat py-16 px-6 lg:px-20`}
+      outer={`bg-[url('/photos/language-year/language-year-bg.jpg')] bg-cover bg-center bg-no-repeat py-16 px-6 lg:px-20`}
       overlay="bg-black/40"
       inner="text-white grid lg:grid-cols-2 gap-10"
     >

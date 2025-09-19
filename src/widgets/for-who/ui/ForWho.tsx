@@ -1,12 +1,11 @@
 import { Container } from "@/shared/components/container";
 import { ITEMS } from "./mock";
 import { Title } from "@/shared/components/title";
-import { REPO_NAME } from "../../../../next.config";
 
 export const ForWho = () => {
   return (
     <Container
-      outer={`bg-[url('${REPO_NAME}/photos/for-who/for-who-bg.jpg')] bg-cover bg-center bg-no-repeat`}
+      outer={`bg-[url('/photos/for-who/for-who-bg.jpg')] bg-cover bg-center bg-no-repeat`}
       overlay="bg-black/40"
       inner="pb-12 text-white"
     >
